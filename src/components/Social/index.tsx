@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import { TabBody, Anchor, Button } from 'react95'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons'
 import Confetti from 'react-dom-confetti'
 import styles from './styles.module.css'
 
@@ -25,7 +30,7 @@ const socials = [
     name: 'Instagram',
     url: 'https://instagram.com/williamgrosset',
     icon: faInstagram
-  },
+  }
 ]
 
 const Socials: React.FC = () => {
@@ -38,26 +43,22 @@ const Socials: React.FC = () => {
   return (
     <TabBody>
       <p>
-        You can reach me by 
+        You can reach me by
         <Button className={styles.Button} onClick={throwConfetti}>
-          <Anchor href="mailto:williamhgrosset@gmail.com">
-            Email
-          </Anchor>
-      </Button>
+          <Anchor href="mailto:williamhgrosset@gmail.com">Email</Anchor>
+        </Button>
       </p>
       <div className={styles.SocialButtonsWrapper}>
-        {socials.map((item, index) =>
+        {socials.map((item, index) => (
           <Button className={styles.SocialButton}>
             <Anchor href={item.url} target="_blank">
-              <Icon icon={item.icon} />{' '}<span>{item.name}</span>
+              <Icon icon={item.icon} /> <span>{item.name}</span>
             </Anchor>
           </Button>
-        )}
+        ))}
       </div>
       <div className={styles.ConfettiWrapper}>
-        <Confetti
-          active={isConfettiVisible}
-        />
+        <Confetti active={isConfettiVisible} />
       </div>
     </TabBody>
   )
