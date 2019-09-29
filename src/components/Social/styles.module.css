@@ -1,0 +1,17 @@
+.Button {
+  margin-left: 10px;
+}
+
+.SocialButton {
+  margin-right: 12px;
+}
+
+.SocialButtonsWrapper {
+  margin-top: 25px;
+}
+
+.ConfettiWrapper {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+}
