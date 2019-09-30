@@ -1,5 +1,6 @@
 {
   "name": "williamgrosset.com",
+  "homepage": "http://williamgrosset.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,6 +23,8 @@
     "typescript": "3.6.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.7",
     "prettier": "1.18.2",
     "pretty-quick": "^1.11.1"
