@@ -7,7 +7,6 @@ import {
   Tabs,
   Tab,
   TabBody,
-  Anchor,
   themes
 } from 'react95'
 import About from '../../components/About'
@@ -60,10 +59,12 @@ const App: React.FC = () => {
                 Social
               </Tab>
             </Tabs>
-            {tab === 0 && <About />}
-            {tab === 1 && <Writings />}
-            {tab === 2 && <Projects />}
-            {tab === 3 && <Social />}
+            <TabBody>
+              {tab === 0 && <About />}
+              {tab === 1 && <Writings />}
+              {tab === 2 && <Projects />}
+              {tab === 3 && <Social />}
+            </TabBody>
           </WindowContent>
         </Window>
       </ThemeProvider>

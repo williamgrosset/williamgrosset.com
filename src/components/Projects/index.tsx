@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TabBody, Anchor, Select, Button } from 'react95'
+import { Anchor, Select, Button } from 'react95'
 import styles from './styles.module.css'
 
 const projects = [
@@ -7,7 +7,7 @@ const projects = [
     value: 0,
     label: '📖 Chapter',
     description:
-      'Conventions and rules for Git commit messages to ensure that commented changes become descriptive, informative, and standardized.',
+      'Conventions and rules for Git commit messages to ensure that commented changes are descriptive, informative, and standardized.',
     language: 'C++',
     languageColor: '#F34B7D',
     url: 'https://github.com/williamgrosset/chapter'
@@ -25,7 +25,7 @@ const projects = [
     value: 2,
     label: '📡 Trace',
     description:
-      'Analyze IP datagrams in a capture file. Echo information from a capture file such as the source and destination, intermediate routers, protocol types, round-trip times, and fragmentation.',
+      'Analyze IP datagrams in a capture file and echo information such as the source and destination, intermediate routers, protocol types, round-trip times, and fragmentation.',
     language: 'Python',
     languageColor: '#3572A5',
     url: 'https://github.com/williamgrosset/trace'
@@ -51,7 +51,7 @@ const projects = [
     value: 5,
     label: '✊ Fokus',
     description:
-      'Chrome extension for productivity and meditation. Block listed domains and practice meditation when subconciously navigating to those specific sites.',
+      'Chrome extension for productivity and meditation. Block listed domains and practice meditation when subconciously navigating to the specified sites.',
     language: 'JavaScript',
     languageColor: '#F1E05A',
     url: 'https://github.com/williamgrosset/fokus'
@@ -84,27 +84,25 @@ const Projects: React.FC = () => {
   }
 
   return (
-    <TabBody>
-      <div>
-        <Select items={projects} onChange={handleChange} width={150} />
-        {projects.map(
-          (item, index) =>
-            index === project && (
-              <>
-                <p>{item.description}</p>
-                <Button>
-                  <Anchor href={item.url}>View project</Anchor>
-                </Button>
-                <span
-                  className={styles.Circle}
-                  style={{ backgroundColor: item.languageColor }}
-                />
-                <span>{item.language}</span>
-              </>
-            )
-        )}
-      </div>
-    </TabBody>
+    <>
+      <Select items={projects} onChange={handleChange} width={150} />
+      {projects.map(
+        (item, index) =>
+          index === project && (
+            <div key={index}>
+              <p>{item.description}</p>
+              <Button>
+                <Anchor href={item.url}>View project</Anchor>
+              </Button>
+              <span
+                className={styles.Circle}
+                style={{ backgroundColor: item.languageColor }}
+              />
+              <span>{item.language}</span>
+            </div>
+          )
+      )}
+    </>
   )
 }
 

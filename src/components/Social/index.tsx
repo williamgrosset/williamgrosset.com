@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TabBody, Anchor, Button } from 'react95'
+import { Anchor, Button } from 'react95'
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import {
   faGithub,
@@ -41,7 +41,7 @@ const Socials: React.FC = () => {
   }
 
   return (
-    <TabBody>
+    <>
       <p>
         You can reach me by
         <Button className={styles.Button} onClick={throwConfetti}>
@@ -50,7 +50,7 @@ const Socials: React.FC = () => {
       </p>
       <div className={styles.SocialButtonsWrapper}>
         {socials.map((item, index) => (
-          <Button className={styles.SocialButton}>
+          <Button className={styles.SocialButton} key={index}>
             <Anchor href={item.url} target="_blank">
               <Icon icon={item.icon} /> <span>{item.name}</span>
             </Anchor>
@@ -60,7 +60,7 @@ const Socials: React.FC = () => {
       <div className={styles.ConfettiWrapper}>
         <Confetti active={isConfettiVisible} />
       </div>
-    </TabBody>
+    </>
   )
 }
 
