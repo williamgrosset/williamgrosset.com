@@ -1,8 +1,3 @@
-html, body, #root {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #5838FD;
+  background-color: #5838fd;
 }
 
 code {
@@ -27,7 +22,8 @@ p {
   line-height: 1.5;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none !important;
-  color: #5838FD !important;
+  color: #5838fd !important;
 }
