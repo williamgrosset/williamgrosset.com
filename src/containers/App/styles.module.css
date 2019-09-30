@@ -14,3 +14,18 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (max-width: 767px) {
+  .App {
+    margin-top: 100px;
+  }
+
+  .Window {
+    width: 350px;
+  }
+
+  .Tab {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

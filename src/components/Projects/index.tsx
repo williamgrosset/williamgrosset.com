@@ -51,7 +51,7 @@ const projects = [
     value: 5,
     label: '✊ Fokus',
     description:
-      'Chrome extension for productivity and meditation. Block listed domains and practice meditation when subconciously navigating to the specified sites.',
+      'Chrome extension for blocking distracting sites and practicing meditation after subconcious navigation.',
     language: 'JavaScript',
     languageColor: '#F1E05A',
     url: 'https://github.com/williamgrosset/fokus'

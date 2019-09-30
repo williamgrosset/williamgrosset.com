@@ -9,6 +9,7 @@ import {
   TabBody,
   themes
 } from 'react95'
+import { isBrowser } from 'react-device-detect'
 import About from '../../components/About'
 import Writings from '../../components/Writings'
 import Projects from '../../components/Projects'
@@ -35,27 +36,43 @@ const App: React.FC = () => {
           <WindowContent>
             <Tabs value={tab} onChange={handleChange}>
               <Tab className={styles.Tab} value={0}>
-                <span role="img" aria-label="rose">
-                  🌹
-                </span>{' '}
+                {isBrowser && (
+                  <>
+                    <span role="img" aria-label="rose">
+                      🌹
+                    </span>{' '}
+                  </>
+                )}
                 About
               </Tab>
               <Tab className={styles.Tab} value={1}>
-                <span role="img" aria-label="rose">
-                  📝
-                </span>{' '}
+                {isBrowser && (
+                  <>
+                    <span role="img" aria-label="rose">
+                      📝
+                    </span>{' '}
+                  </>
+                )}
                 Writings
               </Tab>
               <Tab className={styles.Tab} value={2}>
-                <span role="img" aria-label="rose">
-                  💻
-                </span>{' '}
+                {isBrowser && (
+                  <>
+                    <span role="img" aria-label="rose">
+                      💻
+                    </span>{' '}
+                  </>
+                )}
                 Projects
               </Tab>
               <Tab className={styles.Tab} value={3}>
-                <span role="img" aria-label="rose">
-                  👪
-                </span>{' '}
+                {isBrowser && (
+                  <>
+                    <span role="img" aria-label="rose">
+                      👪
+                    </span>{' '}
+                  </>
+                )}
                 Social
               </Tab>
             </Tabs>
