@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Anchor, Select, Button } from 'react95'
+import { projectSelected, projectViewed } from '../../analytics'
 import styles from './styles.module.css'
 
 const projects = [
@@ -81,6 +82,7 @@ const Projects: React.FC = () => {
 
   const handleChange = value => {
     setProject(value)
+    projectSelected(projects[value].label)
   }
 
   return (
@@ -92,7 +94,13 @@ const Projects: React.FC = () => {
             <div key={index}>
               <p>{item.description}</p>
               <Button>
-                <Anchor href={item.url}>View project</Anchor>
+                <Anchor
+                  href={item.url}
+                  target="_blank"
+                  onClick={() => projectViewed(item.label)}
+                >
+                  View project
+                </Anchor>
               </Button>
               <span
                 className={styles.Circle}

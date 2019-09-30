@@ -10,17 +10,21 @@ import {
   themes
 } from 'react95'
 import { isBrowser } from 'react-device-detect'
+import { tabClicked } from '../../analytics'
 import About from '../../components/About'
 import Writings from '../../components/Writings'
 import Projects from '../../components/Projects'
 import Social from '../../components/Social'
 import styles from './styles.module.css'
 
+const tabs = ['About', 'Writings', 'Projects', 'Social']
+
 const App: React.FC = () => {
   const [tab, setTab] = useState<number>(0)
 
   const handleChange = value => {
     setTab(value)
+    tabClicked(tabs[value])
   }
 
   return (
