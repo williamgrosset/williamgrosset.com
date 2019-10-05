@@ -8,7 +8,7 @@ const projects = [
     value: 0,
     label: '📖 Chapter',
     description:
-      'Conventions and rules for Git commit messages to ensure that commented changes are descriptive, informative, and standardized.',
+      'Conventions and rules for Git commit messages to help ensure commented changes become descriptive, informative, and standardized.',
     language: 'C++',
     languageColor: '#F34B7D',
     url: 'https://github.com/williamgrosset/chapter'
@@ -26,7 +26,7 @@ const projects = [
     value: 2,
     label: '📡 Trace',
     description:
-      'Analyze IP datagrams in a capture file and echo information such as the source and destination, intermediate routers, protocol types, round-trip times, and fragmentation.',
+      'Analyze IP datagrams in a capture file and echo information such as the source, destination, intermediate routers, protocol types, round-trip times, and fragmentation.',
     language: 'Python',
     languageColor: '#3572A5',
     url: 'https://github.com/williamgrosset/trace'
@@ -35,7 +35,7 @@ const projects = [
     value: 3,
     label: '🐦 Tweety',
     description:
-      'Basic HTTP CLI that echos a web server’s support for HTTPs, highest HTTP version, and available cookies. Built to spec defined in RFC 1945, 2616 and 7450.',
+      'Basic HTTP CLI that echos a web server’s support for HTTPs, highest HTTP version, and available cookies. Built to spec defined in RFC 1945, 2616, and 7450.',
     language: 'Python',
     languageColor: '#3572A5',
     url: 'https://github.com/williamgrosset/tweety'
@@ -52,7 +52,7 @@ const projects = [
     value: 5,
     label: '✊ Fokus',
     description:
-      'Chrome extension for blocking distracting sites and practicing meditation after subconcious navigation.',
+      'Chrome extension for practicing meditation after visiting chosen blocked and distracting sites. Stay focused and productive.',
     language: 'JavaScript',
     languageColor: '#F1E05A',
     url: 'https://github.com/williamgrosset/fokus'
@@ -70,7 +70,7 @@ const projects = [
     value: 7,
     label: '🍍 Ripe',
     description:
-      'Product Manager for building a iOS, point-of-sale application with photo recognition for grocers. Built within a 24 hour hackathon and achieved 2nd place at MLH2017.',
+      'Product Manager for building a iOS, point-of-sale application with photo recognition for grocers. Built within a 24 hours and achieved 2nd place at the MLH2017 hackathon.',
     language: 'Swift',
     languageColor: '#FFAC45',
     url: 'https://github.com/williamgrosset/ripe'

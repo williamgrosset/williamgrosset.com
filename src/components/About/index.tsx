@@ -5,9 +5,9 @@ import { linkClicked } from '../../analytics'
 const About: React.FC = () => (
   <>
     <p>
-      William Grosset — 22 years old, dual citizen of the United Kingdom and
-      Canada, residing in Vancouver, and a Software Engineer working with the
-      Growth team at{' '}
+      William Grosset — 22 year old residing in Vancouver, dual citizen of the
+      United Kingdom and Canada, and a Software Engineer working with the Growth
+      team at{' '}
       <Anchor
         className="link"
         href="https://segment.com/"
