@@ -5,9 +5,9 @@ import { linkClicked } from '../../analytics'
 const About: React.FC = () => (
   <>
     <p>
-      William Hamilton Grosset — 22 year old residing in Vancouver, dual citizen
-      of the United Kingdom and Canada, and a Software Engineer working with the
-      Growth team at{' '}
+      William Hamilton Grosset — 22 year old in Vancouver, dual citizen of the
+      United Kingdom and Canada, Computer Science Student, and Software Engineer
+      with the Growth team at{' '}
       <Anchor
         className="link"
         href="https://segment.com/"
@@ -16,7 +16,7 @@ const About: React.FC = () => (
       >
         Segment
       </Anchor>
-      . At 20, I worked with the Revenue team at{' '}
+      . Previously, I worked with the Revenue team at{' '}
       <Anchor
         className="link"
         href="https://www.change.org/"
@@ -24,10 +24,9 @@ const About: React.FC = () => (
         onClick={() => linkClicked('Change.org')}
       >
         Change.org
-      </Anchor>
-      . At 19, I worked with the LEAD Lab research group on an open source
-      health care product at the University of Victoria where I study Computer
-      Science.
+      </Anchor>{' '}
+      and contributed to an open source health care project with the LEAD
+      Research Lab at the University of Victoria.
     </p>
   </>
 )
