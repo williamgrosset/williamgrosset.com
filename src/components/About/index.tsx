@@ -5,7 +5,7 @@ import { linkClicked } from '../../analytics'
 const About: React.FC = () => (
   <>
     <p>
-      William Hamilton Grosset — 22 year old in Vancouver, dual citizen of the
+      William Hamilton Grosset — 23 year old in Vancouver, dual citizen of the
       United Kingdom and Canada, Computer Science Student, and Software Engineer
       with the Growth team at{' '}
       <Anchor
