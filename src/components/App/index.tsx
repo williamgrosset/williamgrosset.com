@@ -21,7 +21,7 @@ import styles from './styles.module.css'
 const transitionStyles = {
   entering: {
     opacity: 0,
-    transform: 'scale(0)',
+    transform: 'scale(0.8)',
     transitionDuration: '300ms'
   },
   entered: {
