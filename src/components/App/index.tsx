@@ -11,6 +11,7 @@ import {
 } from 'react95'
 import { Transition } from 'react-transition-group'
 import { isBrowser } from 'react-device-detect'
+import { withLDProvider } from 'launchdarkly-react-client-sdk'
 import { tabClicked } from '../../analytics'
 import About from '../About'
 import Writings from '../Writings'
@@ -111,4 +112,11 @@ const App: React.FC = () => {
   )
 }
 
-export default App
+export default withLDProvider({
+  clientSideID: '5ebb039c7da8fc0a5951bd2c',
+  user: {
+    key: 'user_key',
+    name: 'User Name',
+    email: 'User@email.com'
+  }
+})(App)
