@@ -1,9 +1,3 @@
-declare global {
-  interface Window {
-    analytics: any
-  }
-}
-
 export function tabClicked(tab: string): void {
   window.analytics.track('Tab Clicked', {
     tab
